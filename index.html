@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset class="calculator-wrapper">
+        <legend>Kalkulator odsetek ustawowych</legend>
+        <label for="kwota">Kwota:</label><br />
+        <div class="input-wrapper">
+          <input
+            class="kwota"
+            type="text"
+            maxlength="15"
+            placeholder="podaj wartość"
+            required
+          /><span>zł</span>
+        </div>
+        <div class="date-wrapper">
+          <div class="termin">
+            <label for="Termin-należności">Termin należności:</label><br />
+            <input
+              type="date"
+              name=""
+              id=""
+              value="2023-09-26"
+              min="2006-01-01"
+              max="2666-01-01"
+            />
+          </div>
+          <div class="data">
+            <label for="data-zapłaty">Data-zapłaty:</label><br />
+            <input
+              type="date"
+              name=""
+              id=""
+              value="2023-09-26"
+              min="2006-01-01"
+              max="2666-01-01"
+            />
+          </div>
+        </div>
+        <button type="submit">
+          <img src="./calculator-svgrepo-com.svg" alt="" />Wylicz
+        </button>
+      </fieldset>
+    </form>
+  </body>
+</html>
