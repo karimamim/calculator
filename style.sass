@@ -1,0 +1,66 @@
+
+.calculator
+	fieldset
+		margin: 2rem auto
+		max-width: 700px
+
+	legend
+		color: #001b2b
+		font-weight: 700
+		font-size: 20px
+
+	.form-group
+		margin-bottom: 2rem
+
+	.form-group.sum-group
+		.append-child
+			display: flex
+			justify-content: space-between
+			max-width: 300px
+
+			input
+				border-top-right-radius: 0
+				border-bottom-right-radius: 0
+
+			span
+				border: #e1e8ed 1px solid
+				border-top-left-radius: 0px
+				border-bottom-left-radius: 0px
+				border-left: 0
+				font-weight: 400
+				width: 40px
+				display: flex
+				align-items: center
+				justify-content: center
+				border-top-right-radius: 3px
+				border-bottom-right-radius: 3px
+				background-color: #f2f7fa
+
+		.invalid-feedback
+			display: none
+			width: 100%
+			margin-top: 0.25rem
+			font-size: .875em
+			color: #dc3545
+
+	.form-group.sum-group.is-invalid
+		.invalid-feedback
+			display: block
+
+	[type="submit"] svg 
+			margin-right: 7px
+
+	.calculator-summery
+		margin-top: 2rem
+		display: none
+
+		.result
+			text-align: right
+
+@media screen and (min-width: 768px)
+	.two-column
+		display: flex
+		gap: 1rem
+
+		.form-group
+			flex: 1
